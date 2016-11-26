@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+  **********************************************************************************************
+
+  Этот файл создан с помощью специального инструмента из файла проекта: ServiceDefinition.csdef
+
+  Изменения в этом файле могут привести к неправильной работе и будут потеряны в случае повторного создания файла.
+
+  **********************************************************************************************
+-->
+<ServiceDefinition name="AzureCloudService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2015-04.2.6">
+  <WebRole name="PlayerData" vmsize="Small">
+    <Sites>
+      <Site name="Web">
+        <Bindings>
+          <Binding name="Endpoint1" endpointName="Endpoint1" />
+        </Bindings>
+      </Site>
+    </Sites>
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
+    </ConfigurationSettings>
+    <Endpoints>
+      <InputEndpoint name="Endpoint1" protocol="http" port="80" />
+    </Endpoints>
+    <Contents>
+      <Content destination=".\">
+        <SourceDirectory path="c:\users\justw\documents\visual studio 2015\Projects\AzureCloudService\AzureCloudService\rcf\Release\PlayerDataContent\" />
+      </Content>
+    </Contents>
+  </WebRole>
+</ServiceDefinition>
