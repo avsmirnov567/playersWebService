@@ -25,7 +25,7 @@
     </Endpoints>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="c:\users\justw\documents\visual studio 2015\Projects\AzureCloudService\AzureCloudService\rcf\Release\PlayerDataContent\" />
+        <SourceDirectory path="C:\Users\justw\documents\visual studio 2015\Projects\AzureCloudService\AzureCloudService\rcf\Release\PlayerDataContent\" />
       </Content>
     </Contents>
   </WebRole>

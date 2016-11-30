@@ -22,7 +22,7 @@ namespace PlayerData
 
             foreach (Model.Players pl in players)
             {
-                Players player = new Players(pl.id, pl.name, pl.sport, pl.country);
+                Players player = new Players(pl.name, pl.sport, pl.country);
                 res.Add(player);
             }
             return res;
@@ -36,24 +36,32 @@ namespace PlayerData
                 List<Model.Players> players = db.Players.Where(pl => pl.name.Contains(name)).ToList();
                 foreach (Model.Players pl in players)
                 {
-                    Players player = new Players(pl.id, pl.name, pl.sport, pl.country);
+                    Players player = new Players(pl.name, pl.sport, pl.country);
                     res.Add(player);
                 }
             }
             return res;
         }
 
-        public void InsertPlayer(Players player)
+        public string InsertPlayer(Players player)
         {
             using (PlayersContext db = new PlayersContext())
             {
-                Model.Players dbPlayer = new Model.Players();
-                dbPlayer.id = player.Id;
-                dbPlayer.name = player.Name;
-                dbPlayer.country = player.Country;
-                dbPlayer.sport = player.Sports;
-                db.Players.Add(dbPlayer);
-                db.SaveChanges();
+                Model.Players dbPlayer = db.Players.Where(pl => pl.name == player.Name && pl.sport == player.Sports && pl.country == player.Country).FirstOrDefault();
+                if (dbPlayer == null)
+                {
+                    dbPlayer = new Model.Players();
+                    dbPlayer.id = Guid.NewGuid();
+                    dbPlayer.name = player.Name;
+                    dbPlayer.country = player.Country;
+                    dbPlayer.sport = player.Sports;
+                    db.Players.Add(dbPlayer);
+                    db.SaveChanges();
+                    return @"Игрок добавлен!";
+                } else
+                {
+                    return @"Такой уже есть в базе!";
+                }
             }
         }
     }

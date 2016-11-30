@@ -25,10 +25,10 @@
     </Endpoints>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="c:\users\justw\documents\visual studio 2015\Projects\AzureCloudService\AzureCloudService\rcf\Debug\PlayerDataContent\" />
+        <SourceDirectory path="C:\Users\justw\documents\visual studio 2015\Projects\AzureCloudService\AzureCloudService\rcf\Debug\PlayerDataContent\" />
       </Content>
       <Content destination=".\">
-        <SourceDirectory path="c:\users\justw\documents\visual studio 2015\Projects\AzureCloudService\AzureCloudService\ecf\PlayerDataContent\" />
+        <SourceDirectory path="C:\Users\justw\documents\visual studio 2015\Projects\AzureCloudService\AzureCloudService\ecf\PlayerDataContent\" />
       </Content>
     </Contents>
     <Imports>

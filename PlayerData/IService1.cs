@@ -12,17 +12,14 @@ namespace PlayerData
     public class Players
     {
         [DataMember]
-        public Guid Id { get; set; }
-        [DataMember]
         public string Name { get; set; }
         [DataMember]
         public string Sports { get; set; }
         [DataMember]
         public string Country { get; set; }
 
-        public Players(Guid id, string name, string sport, string country)
+        public Players(string name, string sport, string country)
         {
-            Id = id;
             Name = name;
             Sports = sport;
             Country = country;
@@ -44,11 +41,13 @@ namespace PlayerData
                 BodyStyle = WebMessageBodyStyle.Bare)]
         List<Players> GetPlayersByName(string name);
 
-        [WebInvoke(UriTemplate = "/addPlayer",
-                    RequestFormat = WebMessageFormat.Json,
-                    ResponseFormat = WebMessageFormat.Json,
-                    BodyStyle = WebMessageBodyStyle.Bare)]
-        void InsertPlayer(Players player);
+        [OperationContract]
+        [WebInvoke(Method = @"POST",
+            BodyStyle = WebMessageBodyStyle.Bare,
+            RequestFormat = WebMessageFormat.Json,
+            ResponseFormat = WebMessageFormat.Json,
+            UriTemplate = "/addPlayer")]
+        string InsertPlayer(Players player);
     }
 
 }

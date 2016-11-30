@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AzureCloudService" generation="1" functional="0" release="0" Id="03f406d5-2002-4c10-b0fa-46df13cbb5a9" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
+<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AzureCloudService" generation="1" functional="0" release="0" Id="337ae959-494d-4993-a3ea-9317c7e72a76" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
   <groups>
     <group name="AzureCloudServiceGroup" generation="1" functional="0" release="0">
       <componentports>
@@ -42,7 +42,7 @@
       </maps>
       <components>
         <groupHascomponents>
-          <role name="PlayerData" generation="1" functional="0" release="0" software="c:\users\justw\documents\visual studio 2015\Projects\AzureCloudService\AzureCloudService\csx\Release\roles\PlayerData" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaIISHost.exe " memIndex="-1" hostingEnvironment="frontendadmin" hostingEnvironmentVersion="2">
+          <role name="PlayerData" generation="1" functional="0" release="0" software="C:\Users\justw\documents\visual studio 2015\Projects\AzureCloudService\AzureCloudService\csx\Release\roles\PlayerData" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaIISHost.exe " memIndex="-1" hostingEnvironment="frontendadmin" hostingEnvironmentVersion="2">
             <componentports>
               <inPort name="Endpoint1" protocol="http" portRanges="80" />
             </componentports>
@@ -70,9 +70,9 @@
     </group>
   </groups>
   <implements>
-    <implementation Id="6be43764-ddd7-483a-a983-16a7715a9e2f" ref="Microsoft.RedDog.Contract\ServiceContract\AzureCloudServiceContract@ServiceDefinition">
+    <implementation Id="70d975a1-c3d8-4d59-84b9-9b6eeaa8631d" ref="Microsoft.RedDog.Contract\ServiceContract\AzureCloudServiceContract@ServiceDefinition">
       <interfacereferences>
-        <interfaceReference Id="8e62ee1c-83cd-4bf4-aba3-cede900af5b7" ref="Microsoft.RedDog.Contract\Interface\PlayerData:Endpoint1@ServiceDefinition">
+        <interfaceReference Id="c5813053-ec0d-4bd7-b3ef-caaa87ec4a90" ref="Microsoft.RedDog.Contract\Interface\PlayerData:Endpoint1@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/AzureCloudService/AzureCloudServiceGroup/PlayerData:Endpoint1" />
           </inPort>

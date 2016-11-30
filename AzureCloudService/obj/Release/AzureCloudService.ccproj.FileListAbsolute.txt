@@ -49,7 +49,7 @@ c:\users\justw\documents\visual studio 2015\Projects\AzureCloudService\AzureClou
 c:\users\justw\documents\visual studio 2015\Projects\AzureCloudService\AzureCloudService\obj\Release\PlayerData\bin\zh-Hant\Microsoft.Data.OData.resources.dll
 c:\users\justw\documents\visual studio 2015\Projects\AzureCloudService\AzureCloudService\obj\Release\PlayerData\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
 c:\users\justw\documents\visual studio 2015\Projects\AzureCloudService\AzureCloudService\obj\Release\PlayerData\bin\zh-Hant\System.Spatial.resources.dll
-c:\users\justw\documents\visual studio 2015\Projects\AzureCloudService\AzureCloudService\bin\Release\ValidationIssues.xml
-c:\users\justw\documents\visual studio 2015\Projects\AzureCloudService\AzureCloudService\obj\Release\PlayerData\packages.config
-c:\users\justw\documents\visual studio 2015\Projects\AzureCloudService\AzureCloudService\obj\Release\PlayerData\Service1.svc
-c:\users\justw\documents\visual studio 2015\Projects\AzureCloudService\AzureCloudService\obj\Release\PlayerData\Web.config
+C:\Users\justw\documents\visual studio 2015\Projects\AzureCloudService\AzureCloudService\bin\Release\ValidationIssues.xml
+C:\Users\justw\documents\visual studio 2015\Projects\AzureCloudService\AzureCloudService\obj\Release\PlayerData\packages.config
+C:\Users\justw\documents\visual studio 2015\Projects\AzureCloudService\AzureCloudService\obj\Release\PlayerData\Service1.svc
+C:\Users\justw\documents\visual studio 2015\Projects\AzureCloudService\AzureCloudService\obj\Release\PlayerData\Web.config

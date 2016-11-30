@@ -24,14 +24,14 @@
     <Property name="SetConfiguration" value="Configuration=Debug" />
     <Property name="SetPlatform" value="Platform=AnyCPU" />
     <Property name="RoleTargetFramework" value="v4.5.2" />
-    <Property name="OutputDir" value="c:\users\justw\documents\visual studio 2015\Projects\AzureCloudService\AzureCloudService\obj\Debug\PlayerData\" />
+    <Property name="OutputDir" value="C:\Users\justw\documents\visual studio 2015\Projects\AzureCloudService\AzureCloudService\obj\Debug\PlayerData\" />
     <Property name="EntryPoint" value="PlayerData.dll" />
-    <Property name="SourceDir" value="c:\users\justw\documents\visual studio 2015\Projects\AzureCloudService\PlayerData\" />
-    <Property name="SitePhysicalPath" value="c:\users\justw\documents\visual studio 2015\Projects\AzureCloudService\PlayerData\" />
+    <Property name="SourceDir" value="C:\Users\justw\documents\visual studio 2015\Projects\AzureCloudService\PlayerData\" />
+    <Property name="SitePhysicalPath" value="C:\Users\justw\documents\visual studio 2015\Projects\AzureCloudService\PlayerData\" />
     <Property name="TargetRuntimeVersion" value="v4.0" />
   </Properties>
   <Sites>
-    <Site name="Web" physicalDirectory="c:\users\justw\documents\visual studio 2015\Projects\AzureCloudService\PlayerData\">
+    <Site name="Web" physicalDirectory="C:\Users\justw\documents\visual studio 2015\Projects\AzureCloudService\PlayerData\">
       <Bindings>
         <Binding name="Endpoint1" endpointName="Endpoint1" />
       </Bindings>

@@ -61,3 +61,4 @@ c:\users\justw\documents\visual studio 2015\Projects\AzureCloudService\PlayerDat
 c:\users\justw\documents\visual studio 2015\Projects\AzureCloudService\PlayerData\bin\zh-Hant\System.Spatial.resources.dll
 c:\users\justw\documents\visual studio 2015\Projects\AzureCloudService\PlayerData\obj\Release\PlayerData.dll
 c:\users\justw\documents\visual studio 2015\Projects\AzureCloudService\PlayerData\obj\Release\PlayerData.pdb
+C:\Users\justw\documents\visual studio 2015\Projects\AzureCloudService\PlayerData\obj\Release\PlayerData.csprojResolveAssemblyReference.cache
